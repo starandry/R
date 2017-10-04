@@ -19,11 +19,44 @@ CREATE TABLE имя_таблицы(имя_поля тип, имя_поля тип.....);    //Создание таблиц
 INSERT INTO имя_таблицы VALUES(значение1, значение2, значение3...);
 
 INSERT INTO имя_таблицы (имя_поля1, имя_поля2...) 
-
 VALUES(значение1, значение2...);  //позволяет добавлять запись с меньшим количеством значений, или с другим порядком следования. 
 
 SELECT имена_полей FROM имя таблицы;  //выборка
-SELECT * FROM expenses; 
+SELECT * FROM expenses;  //выборка всех  полей
+
+ORDER BY - для упорядочивания
+SELECT * FROM expenses ORDER BY value; 
+
+DESC - по убыванию
+SELECT * FROM expenses ORDER BY value DESC;
+
+DELETE FROM имя_таблицы WHERE условие;  //удаление записей из  таблицы
+
+UPDATE имя_таблицы SET имя_столбца=значение, имя_столбца=значение...
+WHERE условие;   //изменения в записи таблицы по условию
+
+DROP TABLE имя_таблицы;  //удаление самой таблицы
+
+DROP DATABASE имя базы;  //удаление самой базы данных
+
+ALTER TABLE receivers ADD address VARCHAR(255);   //добавление колонки  адресс в таблицу получатели
+
+ALTER TABLE receivers DROP address;  //удаление колонки  адресс в получателях
+
+Добавленную  колонку можно  сделать  индексной:
+ALTER TABLE receivers ADD INDEX(name);
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

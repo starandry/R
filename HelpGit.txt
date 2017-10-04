@@ -1,6 +1,12 @@
 https://git-scm.com/book/ru/v1/
 https://toster.ru/q/176843
 
+git clone https://github.com/starandry/R.git
+cd f:/R
+git add .
+git commit -m "1"
+git status
+git push -u origin master
 
 Git для новичков:
 
