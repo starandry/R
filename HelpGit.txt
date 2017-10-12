@@ -7,7 +7,6 @@ cd f:/R
 git pull     //получает данные и  сливает  их
 git commit -a -m "1"    //комит вместе с индексацией 
 git add .
-git commit -m "1"
 git status
 git push -u origin master  //отправляет данные и также сливает их
 
