@@ -66,6 +66,23 @@ _ — означает один любой символ.
 SELECT num,name FROM receivers WHERE name LIKE 'Гипермаркет%';
 //Такой запрос выдаст список всех получателей, названия которых начинаются с Гипермаркет
 
+COUNT() - функция осуществляющая подсчет строк. 
+SELECT COUNT(*) FROM expenses;
+
+функция MAX(имя_поля) ищет максимальное значение. 
+SELECT MIN(paydate) FROM expenses;
+SELECT MAX(value) as Максимум FROM expenses;
+
+Чтобы просуммировать значения в столбце, используется агрегатная функция SUM(имя_поля). 
+SELECT SUM(value) FROM expenses WHERE YEAR(paydate) = 2012;
+
+функция для среднего значения - AVG(имя_поля).
+SELECT AVG(value) FROM expenses;
+
+Группировка выполняется с помощью ключевых слов GROUP BY имя_поля в конце запроса
+SELECT paydate,value,name FROM expenses, receivers rs WHERE receiver=rs.num 
+GROUP BY name;
+ 
 
 
 
