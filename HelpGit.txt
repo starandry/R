@@ -4,6 +4,7 @@ https://toster.ru/q/176843
 git clone https://github.com/starandry/R.git
 
 cd f:/R
+cd f:/Activation
 git pull     //получает данные и  сливает  их
 git commit -a -m "1"    //комит вместе с индексацией 
 git add .
@@ -33,7 +34,10 @@ git commit -m "First commit"
 
 Удалённый репозиторий github.com
 
-git remote add origin https://github.com/starandry/R.git  //Определяется удалённый репозиторий с именем origin 
+git remote add origin https://github.com/starandry/R.git  //Определяется удалённый репозиторий с именем origin
+
+git remote add origin1 https://github.com/starandry/Activation.git
+git push -u origin1 master 
 
 git push -u origin master    //подключение к github; он спросит имя, пароль. Репозиторий First залит на удалённый сервер.
 
