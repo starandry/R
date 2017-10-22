@@ -82,6 +82,8 @@ SELECT AVG(value) FROM expenses;
 Группировка выполняется с помощью ключевых слов GROUP BY имя_поля в конце запроса
 SELECT paydate,value,name FROM expenses, receivers rs WHERE receiver=rs.num 
 GROUP BY name;
+
+https://rutracker.org/forum/viewtopic.php?t=450735
  
 
 
