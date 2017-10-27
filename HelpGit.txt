@@ -11,6 +11,8 @@ git commit -a -m "1"    //комит вместе с индексацией
 git add .
 git status
 git push -u origin master  //отправляет данные и также сливает их
+git push -u origin1 master
+git push -u origin2 master
 
 Git для новичков:
 
